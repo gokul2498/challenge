@@ -64,6 +64,12 @@ border-color: #F4f4f4;
     background-color: gainsboro;
     border: 1px solid gainsboro;
 }
+.dash:hover{
+  color: white;
+}
+.wk:hover{
+  background-color:#382F9C ;
+}
 
     </style>
 </head>
@@ -73,27 +79,27 @@ border-color: #F4f4f4;
             <div class="container">
                 <div class="p-3"><img src="./Assets/logo.png" alt=""></div>
             </div>
-            <div class="d-flex justify-content-end"><img src="./Assets/left_arrow.png" alt=""></div>
+            <div class="d-flex justify-content-end" style="position: absolute;right: -15px;z-index: 1000;padding: 10px;background: white;border-radius: 50%;" ><img src="./Assets/left_arrow.png" alt=""></div>
             <div class="container">
                 <div class="mt-3" style="color: #938FC9;">
                 <div class="d-flex py-3">
                     <div ><img src="./Assets/speedometer.png" alt=""></div>
                     
-                <div class="px-4" style="color: #ffffff;">Dashboard</div>
+                <div class="px-4 dash" style="color: #ffffff;">Dashboard</div>
                 </div>
                 </div>
                 <div class="mt-3" style="color: #938FC9;">
                     <div class="d-flex py-3">
                         <div ><img src="./Assets/graph.png" alt=""></div>
                         
-                    <div class="px-4">Activity</div>
+                    <div class="px-4 dash">Activity</div>
                     </div>
                     </div>
                     <div class="mt-3" style="color: #938FC9;">
                         <div class="d-flex py-3">
                             <div><img src="./Assets/timer_white.png" alt=""></div>
                             
-                        <div class="px-4">Timesheet</div>
+                        <div class="px-4 dash">Timesheet</div>
                         </div>
                         </div>
             </div>
@@ -104,21 +110,21 @@ border-color: #F4f4f4;
                 <div class="d-flex py-3">
                     <div class="px-3"><img src="./Assets/bill.png" alt=""></div>
                     
-                <div class="px-4">To Do</div>
+                <div class="px-4 dash">To Do</div>
                 </div>
                 </div>
                 <div class="mt-3" style="color: #938FC9;">
                     <div class="d-flex py-3">
                         <div class="px-3"><img src="./Assets/icons8-today-96.png" alt=""></div>
                         
-                    <div class="px-4">Invoices</div>
+                    <div class="px-4 dash">Invoices</div>
                     </div>
                     </div>
                     <div class="mt-3" style="color: #938FC9;">
                         <div class="d-flex py-3">
                             <div class="px-3"><img src="./Assets/folder.png" alt=""></div>
                             
-                        <div class="px-4">projects</div>
+                        <div class="px-4 dash">projects</div>
                         </div>
                         <hr style="  border-top: 2px solid  #938FC9;
                         width: 24px;" class=" m-3">
@@ -126,7 +132,7 @@ border-color: #F4f4f4;
                             <div class="d-flex py-3">
                                 <div class="px-3"><img src="./Assets/help.png" alt=""></div>
                                 
-                            <div class="px-4">Help</div>
+                            <div class="px-4 dash">Help</div>
                             
                             </div>
                             </div>
@@ -134,7 +140,7 @@ border-color: #F4f4f4;
                                 <div class="d-flex py-3">
                                     <div class="px-3"><img src="./Assets/download.png" alt=""></div>
                                     
-                                <div class="px-4">Download App</div>
+                                <div class="px-4 dash">Download App</div>
                                 
                                 </div>
                                 </div>
@@ -143,9 +149,9 @@ border-color: #F4f4f4;
          <div>
            <div><img src="./Assets/sidebar_overlay.png" alt=""></div>
          </div>
-         <div class="container"><div class="d-flex ml-4 py-1">
-          <div class="px-3"><img src="./Assets/notification.png" alt=""></div>
-          <div class="px-3 ml-4 mr-4"><img src="./Assets/settings.png" alt=""></div>
+         <div class="container"><div class="d-flex ml-4 py-1 ">
+          <div class="px-3 "><img  src="./Assets/notification.png" alt=""></div>
+          <div class="px-3 ml-4 mr-4 "><img src="./Assets/settings.png" alt=""></div>
           <div class="px-3"><span style="font-size: 1.4em;color: #ffffff;"><i class="fa fa-user-circle-o"></i></span>
           </div>
          </div></div>   
@@ -163,7 +169,7 @@ border-color: #F4f4f4;
     <hr class="mt-2">
     <div class="row">
       <div class="col-lg-8">
-        <div class="m-4 d-flex justify-content-between"><h5>TIME SHEET</h5>
+        <div class="m-4 d-flex justify-content-between"><h5>Timesheet</h5>
     <div class="row">
       <div><button class="btn btn-light"><span style="color:  #382f9c;">View fullsheet</span></button></div>
       <div class="px-4"><img src="./Assets/more.png" alt=""></div>
@@ -279,7 +285,7 @@ border-color: #F4f4f4;
     </div>
     <div class="col-lg-4">
       <h5 class="my-4">Report</h5>
-      <div class="row d-flex justify-content-between mx-1" style="border-radius: 10px; margin-top: 60px;background-color: #382f9c;">
+      <div class="wk row d-flex justify-content-between mx-1" style="border-radius: 10px; margin-top: 60px;">
         <div class="row">
           <div class="mx-4 mt-2 mb-2"><img src="./Assets/graph.png" alt="" style="background-color: #534ba9;border-radius: 4px;" class="p-3">
            </div>
@@ -295,7 +301,7 @@ border-color: #F4f4f4;
 
       </div>
       <div class="mt-4">
-        <div class="row d-flex justify-content-between mx-1" style="border-radius: 10px;background-color: #F4F4F4;">
+        <div class="wk row d-flex justify-content-between mx-1" style="border-radius: 10px;">
           <div class="row">
             <div class="mx-4 mt-2 mb-2"><img src="./Assets/timer_blue.png" alt="" style="background-color: #FFFFFF;border-radius: 4px;" class="p-3">
              </div>
@@ -311,7 +317,7 @@ border-color: #F4f4f4;
         </div>
       </div>
       <div class="rounded mt-4 mx-2" style="border:1px solid #8d88c6 ;">
-<div class="mx-1 p-2 font-weight-bold text-center"><img src="./Assets/pdf.png" alt=""> Export pdf</div>
+<div class="onhover mx-1 p-2 font-weight-bold text-center"><img src="./Assets/pdf.png" alt=""> Export as pdf</div>
       </div>
 
 
@@ -321,7 +327,7 @@ border-color: #F4f4f4;
     <div class="row">
       <div class="col-lg-8 col-md-8">
 <div class="m-4">
-  <h5>TO DO LIST</h5>
+  <h5>To-Do lists</h5>
 </div>
 <div class="row mt-4 py-2 mx-2">
   <div class="mx-4 mt-3 px-2">
@@ -330,7 +336,7 @@ border-color: #F4f4f4;
   </div> 
   <div class=" onhover row d-flex justify-content-between py-3 shadow col-lg-10 " style="border: 1px solid #f9f9f9;border-radius: 6px;" >
     <div class="mx-4">
-      <div style="color: #382F9C;">REVAMP INSTAGRAM APP</div>
+      <div style="color: #382F9C;">Revamp instagram app</div>
       <div style="color: #7f7f7f;">today</div>
     </div>
     <div><img src="./Assets/more.png" alt=""></div>
@@ -343,7 +349,7 @@ border-color: #F4f4f4;
   </div>
   <div class="onhover row d-flex justify-content-between py-3 shadow col-lg-10 " style="border: 1px solid #c0bcbc;border-radius: 6px;" >
     <div class="mx-4">
-      <div >PROTOTYPING</div>
+      <div >Prototyping</div>
       <div style="color: #7f7f7f;">upcoming</div>
     </div>
     <div><img src="./Assets/more.png" alt=""></div>
@@ -356,7 +362,7 @@ border-color: #F4f4f4;
   </div>
   <div class="onhover row d-flex justify-content-between py-3 shadow col-lg-10 " style="border: 1px solid #c0bcbc;border-radius: 6px;" >
     <div class="mx-4">
-      <div >COLLECT REFERENCE FROM NEW PROJECT</div>
+      <div >Collect reference from new project</div>
       <div style="color: #7f7f7f;">upcoming</div>
     </div>
     <div><img src="./Assets/more.png" alt=""></div>
@@ -375,28 +381,28 @@ border-color: #F4f4f4;
     </div>
     <div class="col-lg-4">
       <div class="m-4">
-        <h4>SCREENSHOT</h4>
+        <h4>Screenshots</h4>
       </div>
-      <div class="row d-flex justify-content-between">
+      <div class=" onhover row d-flex justify-content-between">
         <div class="mt-4"><img src="./Assets/picture.png" alt=""></div>
         <div class="mt-4">shot_1_attach_1.png</div>
         <div class="mt-4"><button class="btn btn-light" style="color: #382F9C;">view</button></div>
       </div>
       <hr>
-      <div class="row d-flex justify-content-between">
+      <div class="onhover row d-flex justify-content-between">
         <div class="mt-4"><img src="./Assets/picture.png" alt=""></div>
         <div class="mt-4">shot_1_attach_3.png</div>
         <div class="mt-4"><button class=" btn btn-light" style="color: #382F9C;">view</button></div>
       </div>
       <hr>
-      <div class="row d-flex justify-content-between">
+      <div class="onhover row d-flex justify-content-between">
         <div class="mt-4"><img src="./Assets/video_camera.png" alt=""></div>
         <div class="mt-4">Screen record_12.mov
         </div>
         <div class="mt-4"><button class="btn btn-light" style="color:white; background-color: #382F9C;">play</button></div>
       </div>
       <hr>
-      <div class="rounded mt-4 mx-2" style="border:1px solid #8d88c6 ;">
+      <div class="onhover rounded mt-4 mx-2" style="border:1px solid #8d88c6 ;">
         <div class="mx-1 p-2 font-weight-bold text-center"> View all</div>
               </div>
     </div>
